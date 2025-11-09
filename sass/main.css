@@ -57,7 +57,7 @@ img {
   max-width: 100%;
 }
 
-.img-responsive {
+.img_responsive {
   display: block;
   max-width: 100%;
   height: auto;
@@ -75,6 +75,34 @@ img {
 .btn_simple:hover {
   background-color: #722ED1;
   color: #fff;
+}
+
+.btn {
+  color: #fff;
+  background-color: #722ED1;
+  padding: 14px 40px;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  border-radius: 24px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.btn:hover {
+  background-color: #fff;
+  color: #111;
+}
+.btn.btn_white {
+  background-color: #fff;
+  color: #111;
+}
+.btn.btn_white:hover {
+  color: #fff;
+  background-color: #722ED1;
+}
+
+#top_banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #header {
@@ -103,6 +131,7 @@ img {
 #header .inner_header .right_side_header .mnu_top > li {
   display: inline-block;
   margin-right: 40px;
+  position: relative;
 }
 #header .inner_header .right_side_header .mnu_top > li > a {
   display: block;
@@ -113,6 +142,57 @@ img {
 }
 #header .inner_header .right_side_header .mnu_top > li > a:hover {
   color: #722ED1;
+}
+
+.notif {
+  background-color: #F9F0FF;
+  border-radius: 20px;
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  max-width: 258px;
+}
+.notif img {
+  width: 16px;
+  height: auto;
+  margin-right: 7px;
+}
+.notif p {
+  color: #722ED1;
+}
+.notif a {
+  transition: all 0.4s ease;
+  text-decoration: none;
+  border-bottom: 1px solid #722ED1;
+  color: #722ED1;
+}
+.notif a:hover {
+  color: rgb(91.2, 36.8, 167.2);
+  border-color: rgb(91.2, 36.8, 167.2);
+}
+
+.main_banner {
+  padding: 240px 0 380px;
+}
+.main_banner .mb_info > h1 {
+  color: #160637;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 1.2;
+  max-width: 430px;
+  margin-top: 24px;
+}
+.main_banner .mb_info > .description {
+  color: #8989A2;
+  margin: 14px 0 44px;
+  font-size: 18px;
+}
+.main_banner .mb_info > .btns {
+  display: flex;
+  align-items: center;
+}
+.main_banner .mb_info > .btns > .btn_white {
+  margin-left: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */
