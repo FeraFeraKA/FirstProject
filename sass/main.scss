@@ -131,21 +131,65 @@ img {
         list-style: none;
         >li {
           display: inline-block;
-          margin-right: 40px;
           position: relative;
-          >a {
+          a {
             display: block;
             text-decoration: none;
             font-weight: 500;
             color: #000;
             transition: color .4s ease;
+            padding: 5px 40px 5px 0;
             &:hover {
               color: $accent;
+            }
+          }
+          >.sub_menu {
+            position: absolute;
+            top: 35px;
+            background-color: #fff;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+            z-index: 10;
+            border-radius: 5px;
+            padding: 5px 0;
+            animation: .6s opac;
+            display: none;
+            >li {
+              display: block;
+              >a {
+                padding: 3px 10px;
+                font-size: 14px;
+              }
+            }
+          }
+          &.has_sub_menu {
+            &:hover >.sub_menu {
+              display: block;
+            }
+            &::after {
+              content: "";
+              display: block;
+              width: 8px;
+              height: 4px;
+              background-image: url("/public/small-down.svg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              position: absolute;
+              top: 16px;
+              right: 25px;
             }
           }
         }
       }
     }
+  }
+}
+
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
