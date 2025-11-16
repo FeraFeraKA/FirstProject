@@ -344,6 +344,7 @@ section.information {
       font-size: 22px;
       max-width: 660px;
       margin: 0 auto 16px;
+      height: 100px;
     }
     >img {
       width: 80px;
@@ -380,6 +381,35 @@ section.information {
       &.active {
         filter: grayscale(0);
         transform: scale(1.1);
+      }
+    }
+  }
+}
+
+#pre_footer {
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  .pf_info {
+    >h4 {
+      color: $dark_accent;
+      font-weight: 900;
+      font-size: 38px;
+      text-align: center;
+    }
+    >img {
+      display: block;
+      margin: 42px auto;
+    }
+    >.pf_images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      >img {
+        display: block;
+        margin: 0 auto;
+        width: 46%;
       }
     }
   }
